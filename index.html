@@ -117,7 +117,7 @@
             {
                 name: "PBKDF2",
                 salt,
-                iterations: 100000,
+                iterations: 10000000, // increase iterations for better security(expect 1-2 minute waits for each login)
                 hash: "SHA-256",
             },
             keyMaterial,
